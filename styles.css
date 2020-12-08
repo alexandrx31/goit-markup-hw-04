@@ -1,8 +1,3 @@
-/* main background colour #E5E5E5 */
-/* footer background colour #2F303A */
-/* main <h> colour #212121 */
-/* main text colour #757575 */
-/* accent color #2196F3 */
 :root {
   --accent-background: #2f303a;
   --secondary-background: #f5f4fa;
@@ -65,22 +60,6 @@ h3 {
   letter-spacing: 0.06em;
 }
 
-h4 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
-h5 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
 p {
   color: var(--text-color);
   font-weight: 400;
@@ -140,7 +119,6 @@ button.active {
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
-  /* padding: 26px 0px 24px; */
 }
 
 header .container {
@@ -249,14 +227,6 @@ nav a.active,
   max-width: 1600px;
   margin: 0 auto;
 }
-/* .hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 
 .hero .container {
   flex-direction: column;
@@ -266,6 +236,14 @@ nav a.active,
 .quality {
   padding-top: 94px;
   padding-bottom: 47px;
+}
+.quality h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .quality ul {
@@ -281,7 +259,7 @@ nav a.active,
 .quality-container {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-background);
   border-radius: 4px;
   margin-bottom: 30px;
 
@@ -326,8 +304,12 @@ nav a.active,
   margin-bottom: 50px;
 }
 
-.team h4 {
+.team h3 {
   margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .team p {
@@ -342,6 +324,11 @@ nav a.active,
 .team .container {
   flex-direction: column;
 }
+
+.team-container {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 .team li {
   background-color: var(--secondary-title-color);
   border-radius: 0px 0px 4px 4px;
@@ -355,11 +342,11 @@ nav a.active,
 .social-links {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
 }
 
 .social-links li {
   margin: 0;
-  margin-top: 16px;
   padding: 0px;
   border: 0px;
 }
@@ -383,11 +370,6 @@ nav a.active,
   background-color: var(--accent-color);
   fill: #ffffff;
 }
-
-/* .button-icon:hover,
-.button-icon:focus {
-  fill: #ffffff;
-} */
 
 /* clients */
 
@@ -453,14 +435,18 @@ nav a.active,
   color: var(--title-color);
 }
 
-/*  */
-
 /* our-directions */
 
 .our-directions {
   display: flex;
   flex-wrap: wrap;
 }
+
+.directions-container:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-wrapper {
   padding: 20px;
   background: #ffffff;
@@ -501,13 +487,19 @@ footer {
 
   padding: 60px 0px 60px 0px;
 }
-footer h5 {
+footer p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
   color: #ffffff;
 }
 
 footer .container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 footer .brand {
   margin-right: 70px;
